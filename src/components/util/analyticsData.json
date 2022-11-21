@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Bitcoin",
+    "sub": "BTA",
+    "price1": "$21,019.25",
+    "percent": "-1.35%",
+    "price2": "$400,939,726,363.91"
+  },
+  {
+    "name": "Ethereum",
+    "sub": "ETH",
+    "price1": "$1,593.36",
+    "percent": "-2.40%",
+    "price2": "$193,478,949,760.73"
+  },
+  {
+    "name": "Bitcoin",
+    "sub": "BTA",
+    "price1": "$21,019.25",
+    "percent": "-1.35%",
+    "price2": "$400,939,726,363.91"
+  },
+  {
+    "name": "Ethereum",
+    "sub": "ETH",
+    "price1": "$1,593.36",
+    "percent": "-2.40%",
+    "price2": "$193,478,949,760.73"
+  },
+  {
+    "name": "Bitcoin",
+    "sub": "BTA",
+    "price1": "$21,019.25",
+    "percent": "-1.35%",
+    "price2": "$400,939,726,363.91"
+  }
+]

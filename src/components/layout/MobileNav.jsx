@@ -19,7 +19,7 @@ export default function MobileNav({ links }) {
 
   return (
     <>
-      <Button ref={btnRef} onClick={onOpen}>
+      <Button ref={btnRef} className="mobile-toggler" onClick={onOpen}>
         <FaBars />
       </Button>
       <Drawer
