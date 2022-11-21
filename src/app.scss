@@ -28,11 +28,32 @@ body{
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 4;
 }
 
 .hero{
     background-color: $clr-secondary;
-    padding-top: 4rem;
+    min-height: 100vh;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    color: white;
+    position: relative;
+    z-index: 2;
+    .mobile-item{
+        position: relative;
+        .mobile-img{
+            height: 600px;
+            position: absolute;
+            bottom: -10rem;
+            left: 5rem;
+        }
+    }
+
+    @media only screen and (max-width: 1180px){
+        .mobile-img{
+            left: 0 !important;
+        }
+    }
 }
 
 .icon-button{
@@ -50,6 +71,9 @@ body{
 // ******************************* utils *******************************
 .text-gray{
     color: $clr-gray;
+}
+.text-primary{
+    color: $clr-primary;
 }
 .bg-secondary{
     background-color: #160F1A !important;
