@@ -76,6 +76,46 @@ body{
     }
 }
 
+@mixin button {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 24px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.button{
+    @include button();
+    background: linear-gradient(95.02deg, #FF82D4 0%, #1B1378 100%);
+}
+.white-button{
+    @include button();
+    border: 1px solid white;
+}
+
+.crypto-com{
+    padding: 100px 10px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(22, 15, 26, 0.5), rgba(22, 15, 26, 0.5)), url('./media/bg1.png') no-repeat;
+    background-position: center;
+    margin: 8rem 0;
+    color: white;
+}
+
+.trade{
+    padding: 100px 10px;
+    background-color: $clr-secondary;
+    color: white;
+}
+
 // ******************************* overrides *******************************
 
 

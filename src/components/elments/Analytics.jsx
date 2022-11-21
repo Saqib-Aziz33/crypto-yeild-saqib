@@ -1,5 +1,6 @@
-import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import { Box, Center, Container, Heading, Text } from "@chakra-ui/react";
 import Table from "./Table";
+import Button from "../util/Button";
 
 function Analytics() {
   return (
@@ -19,6 +20,10 @@ function Analytics() {
         <Box mt={16} overflowX="scroll">
           <Table />
         </Box>
+
+        <Center mt={8}>
+          <Button text="Learn more" />
+        </Center>
       </Container>
     </div>
   );
