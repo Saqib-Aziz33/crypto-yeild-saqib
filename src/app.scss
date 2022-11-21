@@ -112,8 +112,14 @@ body{
 
 .trade{
     padding: 100px 10px;
+    padding-bottom: 250px;
     background-color: $clr-secondary;
     color: white;
+}
+
+.trade-sub-section{
+    position: relative;
+    top: -150px;
 }
 
 // ******************************* overrides *******************************
