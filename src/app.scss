@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+$ff-primary: 'Poppins', sans-serif;
+$clr-primary: #D895FF;
+$clr-secondary: #160F1A;
+$clr-gray: #6D7580;
+
+*{
+    font-family: $ff-primary;
+}
+
+body{
+    user-select: none;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+    background-color: $clr-gray;
+}
+
+// ******************************* components *******************************
+.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hero{
+    background-color: $clr-secondary;
+    padding-top: 4rem;
+}
+
+.icon-button{
+    border: 1px solid $clr-primary;
+    border-radius: 6px;
+    &:hover{
+        background-color: $clr-primary !important;
+    }
+}
+
+
+// ******************************* overrides *******************************
+
+
+// ******************************* utils *******************************
+.text-gray{
+    color: $clr-gray;
+}
+.bg-secondary{
+    background-color: #160F1A !important;
+}
