@@ -143,6 +143,27 @@ body{
     }
 }
 
+.footer{
+    background-color: $clr-secondary;
+    color: $clr-gray;
+    a,p{
+        display: block;
+        font-size: 16px;
+        margin-bottom: 0.4rem;
+    }
+    h4{
+        margin-bottom: 2rem;
+        color: white;
+        font-size: 18px;
+    }
+    .icons{
+        font-size: 20px;
+        svg{
+            margin-inline-start: 0;
+        }
+    }
+}
+
 // ******************************* overrides *******************************
 
 
