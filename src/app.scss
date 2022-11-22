@@ -175,7 +175,10 @@ body{
 }
 
 // ******************************* overrides *******************************
-
+.ch-button{
+    background: linear-gradient(95.02deg, #FF82D4 0%, #1B1378 100%) !important; 
+    color: white;
+}
 
 // ******************************* utils *******************************
 .text-gray{
