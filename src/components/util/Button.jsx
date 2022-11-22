@@ -1,11 +1,8 @@
 import { BsArrowRightShort } from "react-icons/bs";
 
-function Button({ type, text, white }) {
+function Button({ text, white, style }) {
   return (
-    <button
-      type={type || "button"}
-      className={!white ? "button" : "white-button"}
-    >
+    <button style={style} className={!white ? "button" : "white-button"}>
       <span>{text}</span>
       <span>
         <BsArrowRightShort size={30} />

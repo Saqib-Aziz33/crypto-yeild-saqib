@@ -6,6 +6,7 @@ import Trade from "../components/elments/Trade";
 import TradeSubSection from "../components/elments/TradeSubSection";
 import Defi from "../components/elments/Defi";
 import Vision from "../components/elments/Vision";
+import Contact from "../components/elments/Contact";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <TradeSubSection />
       <Defi />
       <Vision />
+      <Contact />
     </>
   );
 }
