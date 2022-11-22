@@ -30,7 +30,7 @@ function Footer() {
     <footer className="footer">
       <Container maxW={1400} p={4}>
         <Grid
-          rowGap={4}
+          rowGap={6}
           py={6}
           gridTemplateColumns={{
             base: "1fr 1fr",
@@ -100,13 +100,42 @@ function Footer() {
             </Stack>
           </GridItem>
 
-          {/* <GridItem>
-            <Heading as="h4">App</Heading>
-            <Link></Link>
-            <Link></Link>
-            <Link></Link>
-            <Link></Link>
-          </GridItem> */}
+          <GridItem>
+            <Heading as="h4">Cards</Heading>
+            <Link>Metal Visa Cards</Link>
+          </GridItem>
+
+          <GridItem>
+            <Heading as="h4">Commerce</Heading>
+            <Link>Pay for Business</Link>
+          </GridItem>
+
+          <GridItem>
+            <Heading as="h4">DEFI</Heading>
+            <Link>Wallet</Link>
+            <Link>Swap</Link>
+            <Link>Earn</Link>
+            <Link>Dashboard</Link>
+          </GridItem>
+
+          <GridItem>
+            <Heading as="h4">Company</Heading>
+            <Link>About</Link>
+            <Link>Careers</Link>
+            <Link>News</Link>
+            <Link>Security</Link>
+            <Link>Contact</Link>
+          </GridItem>
+
+          <GridItem>
+            <Heading as="h4">Learn</Heading>
+            <Link>What's Trending</Link>
+            <Link>Product News</Link>
+            <Link>Events</Link>
+            <Link>University</Link>
+            <Link>Research</Link>
+            <Link>Market Updates</Link>
+          </GridItem>
         </Grid>
         <Divider />
 
