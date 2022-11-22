@@ -169,10 +169,12 @@ html{
 
 .contact{
     input, textarea{
+        border-color: $clr-primary;
+        resize: none;
         &:focus{
             border-color: $clr-primary !important;
             outline: unset;
-            box-shadow: 1px 1px 2px $clr-secondary;
+            box-shadow: 0 0 5px #160f1a6e;
         }
     }
 }
