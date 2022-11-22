@@ -4,6 +4,8 @@ import CryptoCom from "../components/elments/CryptoCom";
 import Earn from "../components/elments/Earn";
 import Trade from "../components/elments/Trade";
 import TradeSubSection from "../components/elments/TradeSubSection";
+import Defi from "../components/elments/Defi";
+import Vision from "../components/elments/Vision";
 
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       <Earn />
       <Trade />
       <TradeSubSection />
+      <Defi />
+      <Vision />
     </>
   );
 }

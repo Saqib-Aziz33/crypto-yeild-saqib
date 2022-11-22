@@ -36,7 +36,9 @@ body{
 
 .hero{
     background-color: $clr-secondary;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
     padding-top: 200px;
     padding-bottom: 50px;
     color: white;
@@ -100,7 +102,7 @@ body{
 
 .crypto-com{
     padding: 100px 10px;
-    min-height: 100vh;
+    min-height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,6 +122,25 @@ body{
 .trade-sub-section{
     position: relative;
     top: -150px;
+}
+
+.vision{
+    min-height: 600px;
+    background: url('./media/bg2.png') no-repeat center center/cover;
+    padding: 200px 2px;
+    position: relative;
+    .overlay{
+        position: absolute;
+        top: 0;left: 0;bottom: 0;right: 0;
+        background: rgba(11, 14, 17, 0.5);
+        backdrop-filter: blur(7.5px);
+    }
+    .container{
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        color: white;
+    }
 }
 
 // ******************************* overrides *******************************

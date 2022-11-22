@@ -19,7 +19,7 @@ function Earn() {
         overflowY="hidden"
       >
         <Grid gridTemplateColumns={{ base: "1fr", md: "1fr 1fr" }}>
-          <GridItem>
+          <GridItem pb={{ base: 4, md: 0 }}>
             <Text fontSize="18px" className="text-grad">
               CRYPTO EARN
             </Text>
