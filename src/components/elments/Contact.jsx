@@ -8,19 +8,32 @@ import {
 } from "@chakra-ui/react";
 import { db } from "../../firebase.config";
 import { collection, addDoc } from "firebase/firestore";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(true);
   const collectionId = "crypto_yeild";
+  const emailRegex = /.*[@].*[.].*/;
+
+  // form validation
+  useEffect(() => {
+    if (!name || !email || !message) {
+      setIsDisabled(true);
+    } else if (name.length < 3) {
+      setIsDisabled();
+    } else if (!emailRegex.test(email)) {
+      setIsDisabled(true);
+    } else {
+      setIsDisabled(false);
+    }
+    // eslint-disable-next-line
+  }, [name, email, message]);
 
   const submitMessage = async () => {
-    if (!name || !email || !message) {
-      return alert("Form fields are empty");
-    }
     try {
       setLoading(true);
       const docRef = await addDoc(collection(db, collectionId), {
@@ -71,6 +84,7 @@ function Contact() {
           />
 
           <Button
+            disabled={isDisabled}
             onClick={submitMessage}
             className="ch-button"
             isLoading={loading}
