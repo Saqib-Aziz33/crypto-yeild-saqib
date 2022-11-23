@@ -17,7 +17,7 @@ function Analytics() {
           </Text>
         </Container>
 
-        <Box mt={16} overflowX="scroll">
+        <Box mt={16} className="table-wrapper" overflowX="scroll">
           <Table />
         </Box>
 
